@@ -4,9 +4,6 @@ Code example used in the tutorial series on Django Authentication.
 
 ## Correr o Project localmente
 
-Clone do repositorio
-```bash
-git clone https://github.com/hermanmaleiane/turismo.git
 ```
 Na raiz do projecto 
 ```bash
