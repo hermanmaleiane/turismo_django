@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div id="modaForm" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Pontos De Interesse Turistico</h3>
+                </div>
+                <div class="modal-body">               
+                    <form role="form" method="POST" action="">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label">Nome</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Categoria</label>
+                            <div>
+                                <label for="categoria"></label>
+                                <select class="form-control" id="categoria">
+                                  <option>Logistica</option>
+                                  <option>Monumentos</option>
+                                  <option>Ruinas</option>
+                                  <option>Museus</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Longitude</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" id="long" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Latitude</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" id="lat" value="">
+                            </div>
+                        </div>
+                       
+                        <div class="form-group">
+                            <form class="form-inline my-2 my-lg-0">
+                                <button type="submit" class="btn btn-success"> Salvar </button>
+                                <button type="reset"  data-dismiss="modal"  class="btn btn-secondary" onclick="addNewProduct()"> Cancelar </button>
+                              </form>
+                            <div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+{% endblock %}
